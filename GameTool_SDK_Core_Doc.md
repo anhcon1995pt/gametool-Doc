@@ -20,8 +20,7 @@
 ### Thêm Package
 
 -   Vào menu Window -\> Package Manager -\> My Registries -\> *GameTool Sdk*.
--   Install package: *Game Tool SDK: Core*.
-    ![](Image/11a3a3d9c3dfd53cf5e8327df28b4b75.png)
+-   Install package: *Game Tool SDK: Core*. ![](Image/11a3a3d9c3dfd53cf5e8327df28b4b75.png)
 
 # Hướng dẫn sử dụng
 
@@ -141,5 +140,30 @@ namespace AC.GameTool.SaveData
         public bool SoundActive;
         public bool HapticActive;
     }
+}
+```
+
+### Cách sử dụng
+
+-   Thêm 1 GameObject vào Hierarchy. Thêm compoment SaveManager vào GameObject. ![](Image/dbc611fe1ed0863681a86c09eaf15642.png)
+-   Đọc và thay đổi Game Data.
+
+Ví dụ: Về đọc và đổi tên của Player
+
+```C#
+using AC.GameTool.SaveData;
+using UnityEngine;
+
+public class ReadAndChangeGameDataDemo : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        GameData gameData = SaveManager.Instance.GameData;
+        string playerName = gameData.PlayerName;
+        Debug.Log(playerName);
+        gameData.PlayerName = "New Player Name";
+        SaveManager.Instance.GameData = gameData;
+    }  
 }
 ```
