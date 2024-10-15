@@ -145,7 +145,7 @@ namespace AC.GameTool.SaveData
 
 ### Cách sử dụng
 
--   Thêm 1 GameObject vào Hierarchy. Thêm compoment SaveManager vào GameObject. ![](Image/dbc611fe1ed0863681a86c09eaf15642.png)
+-   Thêm 1 GameObject vào Hierarchy. Thêm compoment SaveManager vào GameObject. Hãy chắc chắn CheckLoadCompleted.IsLoadCompleted = true trước khi load/save data game. Thường GameObject sẽ để ở load scene.![](Image/dbc611fe1ed0863681a86c09eaf15642.png)
 -   Đọc và thay đổi Game Data.
 
 Ví dụ: Về đọc và đổi tên của Player
@@ -167,3 +167,12 @@ public class ReadAndChangeGameDataDemo : MonoBehaviour
     }  
 }
 ```
+
+## Pool Manager
+
+### Hướng dẫn sử dụng
+
+-   Thêm 1 GameObject vào Hierarchy. Thêm compoment PoolManager vào GameObject. Hãy chắc chắn CheckLoadAssetCompleted.IsLoadCompleted = true trước khi spawn Object. Thường GameObject sẽ để ở load scene.
+-   Thêm Pool Object. Kéo Object Prefab vào ListPoolItem và nhập số lượng khởi tạo object ban đầu.
+
+    ![](Image/e8e984d1ff9ce86fbb2d76e5e14c6e36.png)
