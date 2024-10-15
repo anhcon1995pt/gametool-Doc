@@ -23,3 +23,7 @@
 -   Thêm các package cần thiết.
 
     ![](Image/11a3a3d9c3dfd53cf5e8327df28b4b75.png)
+
+# Hướng dẫn chi tiết các package trong GameTool
+
+## [1. Package GameTook Sdk: Core](https://github.com/anhcon1995pt/gametool-Doc/blob/main/GameTool_SDK_Core_Doc.md)
