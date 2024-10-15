@@ -26,4 +26,4 @@
 
 # Hướng dẫn chi tiết các package trong GameTool
 
-## [Package GameTook Sdk: Core](https://github.com/anhcon1995pt/gametool-Doc/blob/main/GameTool_SDK_Core_Doc.md)
+## [Package GameTook Sdk: Core](GameTool_SDK_Core_Doc.md)
